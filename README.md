@@ -1,1 +1,1 @@
-![Python application](https://github.com/<seu_usuario>/<seu_repositorio>/actions/workflows/ci.yml/badge.svg)
+![Python application](https://github.com/<seu_usuario>/CI-CD-Challenges/actions/workflows/ci.yml/badge.svg)
