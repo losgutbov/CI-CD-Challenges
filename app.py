@@ -12,5 +12,5 @@ def index():
     return "<p>Olá, Mundo!</p>"
 
 
-if __name__ == "__manin__":
+if __name__ == "__main__":
     app.run()
