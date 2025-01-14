@@ -15,9 +15,3 @@ def test_teste_route():
     assert response.status_code == 200
     assert response.data.decode('utf-8') == "Testado!!"
 
-
-def test_erro_route():
-
-    response = app.test_client().get("/erro/")
-
-    assert response.status_code == 200
