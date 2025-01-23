@@ -6,11 +6,11 @@ name: Python application
 on:
   push:
     paths:
-      - 'tests/**'
+      - 'first_tests_ci/**'
     branches: [ "main" ]
   pull_request:
     paths:
-      - 'tests/**'
+      - 'first_tests_ci/**'
     branches: [ "main" ]
 
 permissions:
@@ -33,14 +33,14 @@ jobs:
         pip install flake8 flask pytest
     - name: Lint with flake8
       run: |
-        flake8 tests/app.py tests/test_app.py
+        flake8 first_tests_ci/app.py first_tests_ci/test_app.py
     - name: Test with pytest
       run: |
-        pytest tests/test_app.py
+        pytest first_tests_ci/test_app.py
     - name: Archive build artifacts
       run: |
         mkdir -p build
-        cp tests/app.py build/
+        cp first_tests_ci/app.py build/
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
